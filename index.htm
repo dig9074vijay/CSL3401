@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FORM</title>
+	<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+	<style>
+		h1{
+			text-align: center;
+			font-family: 'Roboto Slab',serif;
+			margin: auto;
+			padding: 20px;
+			overflow: hidden;
+			background-color: coral;
+			color: #fff;
+			margin:0;
+		}
+		html {
+				background-color: #e4fdf1;
+			}
+			body {
+				font-family: 'Roboto Slab', serif;
+				margin: 50px;
+				font-size: 22px;}
+				h3 {
+				font-size: 2rem;
+				padding: 15px;
+				background-color: #99ff99;
+
+			}
+	</style>
+</head>
+<body>
+	<h1><center>Registration</center></h1>
+	<form action="#" method="POST">
+		<fieldset>
+		<legend><h3>Basic Details</h3></legend>
+		<table cellspacing="10px">
+		<tr>
+		<td>Form Number</td>
+		<td><input type="number" name="formNumber"></td>
+		</tr>
+		<tr>
+		<td>Name</td>
+		<td><input type="text" name="Name" placeholder="Your Name"></td>
+		</tr>
+		<tr>
+		<td>Roll Number</td>
+		<td><input type="number" name="rollNumber"></td>
+		</tr>
+		<tr>
+					<td>
+						<label for="gender">Gender</label>
+					</td>
+					<td id="gender">
+						<label for="male">Male</label>
+						<input type="radio" name="gender" value="Male" id="male" />
+						<label for="female">Female</label>
+						<input id="female" type="radio" name="gender" value="Female" />
+					</td>
+				</tr>
+		<tr>
+			<td>DOB</td>
+			<td><input type="date" name="dateOfBirth"></td>
+		</tr>
+		<tr>
+					<td>
+						<label for="pwd">PWD</label>
+					</td>
+					<td id="pwd">
+						<label for="yes">YES</label>
+						<input type="radio" name="PWD" id="yes" />
+						<label for="no">NO</label>
+						<input type="radio" name="PWD" id="no" />
+					</td>
+				</tr>
+		<tr>
+			<td>Category</td>
+			<td>
+			<select name="Category" >
+				<option value="General">General</option>
+				<option value="OBC">OBC</option>
+				<option value="SC">SC</option>
+				<option value="ST">ST</option>
+				<option value="PWD">PWD</option>
+			</select>
+			</td>
+		</tr>
+		<tr><td>Address</td></tr>
+		<tr><td colspan="2"><textarea name="Address" rows="10" cols="50"></textarea></td></tr>
+		<tr>
+			<td colspan="2">Please input the correct PIN Code*</td>
+		</tr>
+		<tr>
+			<td>
+				Pin Code
+			</td>
+			<td><input type="number" name="pinCode"></td>
+		</tr>
+		<tr>
+			<td>
+				Phone of Student
+			</td>
+			<td>
+				<select name="countryCode">
+					<option value="+91">
+					+91
+					</option>
+				</select>
+				<input type="number" name="phoneStudent">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Phone of Guardian
+			</td>
+			<td>
+				<select name="countryCode">
+					<option value="+91">
+					+91
+					</option>
+				</select>
+				<input type="number" name="guardianStudent">
+			</td>
+		</tr>
+		</table>
+		</fieldset>
+	</form>
+	<br>
+	<form action="#" method="POST">
+		<fieldset>
+			<legend><h3>Academic Information</h3></legend>
+			<table cellspacing="10px">
+				<tr>
+					<td>Course</td>
+					<td>
+						<select name="Course">
+							<option value="B.Tech">B.Tech</option>
+							<option value="M.Tech">M.Tech</option>
+							<option value="B.Arch">B.Arch</option>
+							<option value="B.Tech">M.Arch</option>
+							<option value="B.Tech">M.Tech(Dual Degree)</option>
+							<option value="B.Tech">Int.MSc</option>
+
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Branch</td>
+					<td><input type="text" name="Branch"></td>
+				</tr>
+				<tr>
+					<td>Semester</td>
+					<td><input type="number" name="semester"></td>
+				</tr>
+				<tr>
+					<td>
+						All India Rank
+					</td>
+					<td>
+						<input type="number" name="AIR">
+					</td>
+					<td>(2020 JEE Mains/GATE)</td>
+				</tr>
+				<tr>
+					<td>
+						Category Rank
+					</td>
+					<td>
+						<input type="number" name="catgoryRank">
+					</td>
+					<td>(2020 JEE Mains/GATE)</td>
+				</tr>
+				<tr>
+					<td>CGPA</td>
+					<td><input type="number" name="CGPA"></td>
+				</tr>
+			<tr>
+					<td>
+						<label for="backlog">Backlog</label>
+					</td>
+					<td id="backlog">
+						<label for="yes">YES</label>
+						<input type="radio" name="back" id="yes" />
+						<label for="no">NO</label>
+						<input type="radio" id="no" name="back" />
+					</td>
+				</tr>
+					<tr>
+					<td>
+						<label for="acc">Hostel Accomodation</label>
+					</td>
+					<td>
+						<label for="yes">YES</label>
+						<input type="radio" name="acc" id="yes" />
+						<label for="no">NO</label>
+						<input type="radio" name="acc" id="no" />
+					</td>
+				</tr>
+				<tr>
+					<td>Name of Hostel</td>
+					<td><input type="text" name="nameOfHostel"></td>
+				</tr>
+				<tr>
+					<td>Room Number</td>
+					<td><input type="text" name="roomNumber"></td>
+				</tr>
+				
+			</table>
+		</fieldset>
+
+	</form>
+	<form action="#" method="POST">
+		<fieldset>
+			<legend><h3>Account Details</h3></legend>
+			<table cellspacing="10px">
+				<tr>
+					<td>
+						Account Holder Name
+					</td>
+					<td>
+						<input type="text" name="accountHolderName">
+					</td>
+					<td>
+						As per Bank Passbook
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Account Number
+					</td>
+					<td>
+						<input type="number" name="accountNumber">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						IFSC Code
+					</td>
+					<td>
+						<input type="text" name="IFSCCode">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Bank Name
+					</td>
+					<td>
+						<input type="text" name="bankName">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Bank Branch
+					</td>
+					<td>
+						<input type="text" name="bankBranch">
+					</td>
+				</tr>
+
+			</table>
+		</fieldset>
+	</form>
+	<input type="Submit" name="Submit" value="Submit" align="center">
+</body>
+</html>
